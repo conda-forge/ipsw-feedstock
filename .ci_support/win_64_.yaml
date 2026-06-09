@@ -3,7 +3,7 @@ channel_sources:
 channel_targets:
 - conda-forge main
 libheif:
-- '1.19'
+- '1.23'
 m2w64_c_compiler:
 - gcc
 m2w64_c_compiler_version:
