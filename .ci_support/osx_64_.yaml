@@ -15,7 +15,7 @@ channel_sources:
 channel_targets:
 - conda-forge main
 libheif:
-- '1.19'
+- '1.23'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 openssl:
