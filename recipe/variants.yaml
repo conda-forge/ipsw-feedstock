@@ -1,8 +1,7 @@
-# conda-forge's gcc-15 migration is incomplete. Modern go-cgo builds pin
-# gcc_linux-64 13.* / 14.*, and gendef/libwinpthread have no gcc-15 build,
-# so an unconstrained solve silently backtracks to go-cgo 1.13.5 (2019).
-# Hold the C compiler at 14 until the go feedstock is rebuilt for gcc 15.
-# osx is intentionally NOT pinned here: it uses clang (currently 21), not gcc.
+MACOSX_SDK_VERSION:
+  - if: osx
+    then: "12"
+
 c_compiler_version:
   - if: linux
     then: "14"
