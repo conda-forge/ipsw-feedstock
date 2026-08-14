@@ -3,7 +3,7 @@ set -euxo pipefail
 IFS=$'\n\t'
 
 # Enable CGO for native library support
-export GOFLAGS="${GOFLAGS} -mod=readonly"
+export GOFLAGS="${GOFLAGS:-} -mod=readonly"
 
 # Set up pkg-config for finding libraries
 export CGO_CFLAGS="-I${PREFIX}/include"
