@@ -31,6 +31,7 @@ requirements:
         - ${{ compiler("m2w64_c") }}
         - ${{ stdlib("m2w64_c") }}
     - git
+    - go-cgo >=1.24
     - pkg-config
   host:
     # CGO dependencies - Go links statically, no run deps needed
