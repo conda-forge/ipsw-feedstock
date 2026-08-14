@@ -1,0 +1,13 @@
+MACOSX_SDK_VERSION:
+  - if: osx
+    then: "12"
+
+c_compiler_version:
+  - if: linux
+    then: "14"
+  - if: osx
+    then: "19"
+
+m2w64_c_compiler_version:
+  - if: win
+    then: "14"
