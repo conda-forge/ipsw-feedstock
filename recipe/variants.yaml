@@ -10,4 +10,4 @@ c_compiler_version:
 
 m2w64_c_compiler_version:
   - if: win
-    then: "14"
+    then: "15"
