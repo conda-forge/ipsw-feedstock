@@ -1,6 +1,6 @@
 context:
   name: ipsw
-  version: "3.1.728"
+  version: "3.1.729"
 
 package:
   name: ${{ name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/blacktop/ipsw/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 14c5511932a5a0e79e194c3da57b13343dd94484c7f08f96a19b19d6d1bc5282
+  sha256: 215c33754ac46c57d949b39bd6e578fdcd961aa89198379e2019993f50297efd
 
 build:
   number: 0
