@@ -1,6 +1,6 @@
 context:
   name: ipsw
-  version: "3.1.737"
+  version: "3.1.738"
 
 package:
   name: ${{ name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/blacktop/ipsw/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 51f05fac334b8435255cf0c081cb4266a2e2d941828544852f8999676f8d32de
+  sha256: 7900c370dc1fd6b03f9b477df486cb9fd6466577a29534811279012475c60402
 
 build:
   number: 0
@@ -31,7 +31,7 @@ requirements:
         - ${{ compiler("m2w64_c") }}
         - ${{ stdlib("m2w64_c") }}
     - git
-    - go-cgo >=1.24
+    - go-cgo >=1.27
     - pkg-config
   host:
     # CGO dependencies - Go links statically, no run deps needed
