@@ -32,7 +32,7 @@ requirements:
         - ${{ stdlib("m2w64_c") }}
     - git
     - go-cgo >=1.27
-    - pkg-config
+    - pkgconf
   host:
     # CGO dependencies - Go links statically, no run deps needed
     - libusb
